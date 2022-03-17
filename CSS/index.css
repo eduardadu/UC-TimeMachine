@@ -1,0 +1,371 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+
+#inicio{
+font-family:"Quantico",sans-serif;
+font-weight: 700;
+position:relative;
+font-size:4em;
+margin-top:4em;
+margin-left: -5em;
+}
+#inicioin{
+font-family:"Quantico",sans-serif;
+font-weight: 700;
+position:absolute;
+margin-left:0.3em;
+text-align: left;
+max-width: 7em;
+
+}
+
+body{
+  margin:0;
+  overflow:hidden;
+  width:100%;
+  height:100vh;
+  /*display:flex;*/
+}
+
+.logo{
+  position:relative;
+  width:75%;
+  margin:1.5em;
+}
+
+/*--------------------------------------- MENU */
+.burger{
+  position:fixed;
+  background: white;
+  right:2em;
+  top:2em;
+  z-index:10;
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+}
+.burger img{
+  width:1.5em;
+  height:auto;
+margin:0.5em;
+margin-bottom:0.25em;
+}
+
+.burger img:hover{
+  cursor:pointer;
+}
+.menu{
+  display:none;
+  position:fixed;
+  z-index:7;
+  background:white;
+  width:auto;
+  height:auto;
+  right:6em;
+  top:2em;
+  font-family:"Quantico",sans-serif;
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+}
+.menu a{
+  text-decoration:none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5em;
+  /*display:block; */
+/*  margin:1em; */
+position: relative;
+margin:1em;
+}
+
+.menu a:hover{
+  color:#e87305;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+.zoom{
+  position:fixed;
+  background: white;
+  right:2em;
+  top:9em;
+  z-index:10;
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+  display:flex;
+  flex-direction: column;
+  width:2.5em;
+}
+.zoom img{
+  margin:auto;
+  margin-bottom: 0.25em;
+}
+
+
+/*----------------------------------------- */
+
+#navbar2{
+  margin-right:5em;
+  margin-left:5em;
+  margin-top:2em;
+  position:fixed;
+  background:white;
+  font-family:'Quantico', sans-serif;
+  width:15%;
+  z-index:4;
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+  overflow: hidden;
+  height:4em;
+  min-width:10em;
+  -webkit-transition: height 0.5s ease-out;
+  -moz-transition: height 0.5s ease-out;
+  -o-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+}
+
+.navbar{
+  margin:5em;
+  position:fixed;
+  background:white;
+  font-family:'Quantico', sans-serif;
+  width:15%;
+  min-width:10em;
+  height:45%;
+  z-index:4;
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+  bottom:4em;
+}
+
+
+#labelsPre{
+  display:flex;
+  position: relative;
+  width:45%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#labelsPre div{
+  font-family:"Quantico";
+  font-size:0.6em;
+  display:block;
+  text-align: right;
+  color:BLACK;
+  position:absolute;
+  right:0;
+}
+
+#navbarSeparator{
+  display:Flex;
+  flex-direction: row;
+  margin-bottom:3em;
+  margin-top:2em;
+}
+#navbartitle{
+  margin:1em;
+}
+
+
+
+/* -------------------------SEARCH BAR */
+#search{
+  margin:1.5em;
+  text-decoration: none;
+  border:none;
+  border-bottom: 2px  solid black;
+  font-family: "Lato";
+  color:black;
+  opacity:1;
+}
+#search:focus{
+    border-bottom: 2px  solid black;
+}
+
+
+#descricao{
+  font-family: "Lato";
+margin-right:1em;
+margin-left:1em;
+margin-bottom:1em;
+}
+
+.title{
+  font-family:'Quantico', sans-serif;
+  font-weight: 700;
+  color:black;
+font-size:0.8em;
+text-align:center;
+margin-top:2em;
+}
+
+.dragscroll{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    scrollbar-width: none;
+    margin-left:20%;
+   float:right;
+}
+
+
+
+
+element { overflow: -moz-scrollbars-none; }
+::-webkit-scrollbar {
+display: none;
+}
+/*-------------------------------------------------------------------------TIMEBAR*/
+
+.container{
+  display:flex;
+  height:100%;
+  overflow-x:hidden;
+  user-select: none;
+  cursor: pointer;
+
+}
+
+
+.container.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+
+}
+
+
+
+svg{
+  position:absolute;
+  width:140%; /* -----------------------------------------------AJUSTAR CONSOANTE A IMAGEM*/
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+
+}
+svg:hover{
+  cursor:grab;
+}
+
+.teste{
+  position:absolute;
+  width:140%;
+}
+
+#mapa2{
+  z-index:-1;
+}
+
+#mapaEdi path, #mapaEdi polygon{
+  fill:orange;
+  stroke:black;
+  -webkit-transition: fill 0.25s ease-out;
+  -moz-transition: fill 0.25s ease-out;
+  -o-transition: fill 0.25s ease-out;
+  transition: fill 0.25s ease-out;
+  cursor:pointer;
+
+}
+#mapaEdi path:hover{
+  fill:black;
+  stroke:black;
+}
+#mapaEdi polygon:hover{
+  fill:black;
+  stroke:black;
+
+}
+
+#mapaEdi{
+  z-index:3;
+}
+
+
+/*-------------------------------------------------------------------- POPUP */
+
+#popup{
+  background:white;
+  width:0;
+  font-family: "Quantico", sans-serif;
+  position:fixed;
+  z-index:6;
+  border-style                :   solid;
+  border-width                :   4px;
+  border-color                :   black;
+opacity:0;
+/*  -webkit-transition: width 1s ease-out;
+  -moz-transition: width 1s ease-out;
+  -o-transition: width 1s ease-out;
+  transition: width 1s ease-out; */
+  overflow: hidden;
+
+}
+
+#popuptitle{
+  margin:0.5em;
+  font-size: 1.2em;
+  width: 10em;
+  overflow-x: hidden;
+}
+
+#popupimg {
+  width:14em;
+  height:12em;
+  margin:0.5em;
+  object-fit:cover;
+  position:relative;
+}
+
+
+
+.popupimg{
+  width:14em;
+  height:12em;
+  object-fit:cover;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+/*----------------------------------------------------------- */
+
+
+#texture{
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  position:fixed;
+
+  overflow:hidden;
+  top:0;
+  z-index:3;
+  opacity:0.2;
+  position:absolute;
+  width:140%; /* -----------------------------------------------AJUSTAR CONSOANTE A IMAGEM*/
+
+}
+
+
+#Rio:hover{
+  fill:black;
+  fill-opacity:1;
+}
+#Jardim:hover{
+  fill:black;
+  fill-opacity:1;
+}
+#Jardim{
+  fill-opacity:0;
+}
+#Rio{
+  fill-opacity:0;
+}

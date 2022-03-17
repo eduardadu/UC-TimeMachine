@@ -1,0 +1,75 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+
+body{
+  background-color: #EDEDED;
+}
+
+#titlecredit{
+  font-family:"Quantico",sans-serif;
+  font-size:2em;
+  margin-bottom:2em;
+}
+
+.texto{
+  font-family: "Lato";
+  max-width:32em;
+  font-weight: 200;
+}
+
+
+.textopequeno{
+  font-family: "Quantico";
+  font-size: 1em;
+  margin-top:2em;
+  margin-bottom: 0.5em;
+}
+
+
+.texto a{
+  display:block;
+  margin-bottom: 1em;
+  color:blue;
+  font-size:1em;
+}
+
+.textocorrido{
+  font-family: "Lato";
+  font-size:1em;
+  margin-top:1.5em;
+  font-weight: 200;
+}
+
+
+
+/*--------------------------------------------------------------- MONUMENTOS*/
+
+.listadata{
+  font-family: "Quantico";
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.listanome{
+  font-family: "Lato";
+
+}
+
+.listaimagem{
+  width:5em;
+  display:inline;
+}
+
+.groupTiny{
+  display:inline;
+  width:40%;
+  margin-left:1.5em;
+}
+.groupList{
+  display:flex;
+  flex-direction: row;
+  margin-bottom:2.5em;
+}
